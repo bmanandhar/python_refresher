@@ -28,7 +28,7 @@ class Solution(object):
     
 if __name__ == '__main__':
     
-    strings = ['word', 'sentence', 'america', 'currency', 'fantastic']
+    strings = ['word', 'sentence', 'america', 'currency', 'fantastic', 'stations']
     S = Solution()
     for i in range(len(strings)):
         print(S.letter_count(strings[i]))
