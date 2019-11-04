@@ -11,9 +11,7 @@ class Solution(object):
         result = ''
         
         array = [None] * len(text)
-        
-        text = list(text)
-        
+                
         for i in range(len(text)):
             array[i] = text[len(text) - 1 - i]
         
