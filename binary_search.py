@@ -6,8 +6,12 @@ Created on Mon Nov  4 15:01:48 2019
 @author: bijayamanandhar
 """
 
+'''
+In the binary search method, all the elements have to be sorted.
+This will work for an array with elements sorted in ascending order. 
+'''
+
 class Solution(object):
-    
     
     def binary_search(self, array, num):
         
@@ -35,12 +39,12 @@ if __name__ == '__main__':
     
     S = Solution()
     
-    examples = [                   
-            [[4, 7, 8, 12, 34, 45, 99], 45],
-            [[1, 3, 5, 7, 11], 12],
-            [[2, 9, 10, 11, 15], 15],
-            [[4, 9, 23, 32, 56], 23]
-            ]
+    examples = (                   
+            ([4, 7, 8, 12, 34, 45, 99], 45),
+            ([1, 3, 5, 7, 11], 12),
+            ([2, 9, 10, 11, 15], 15),
+            ([4, 9, 23, 32, 56], 23)
+            )
     
     for example in examples:    
         if S.binary_search(example[0], example[1]):
