@@ -48,7 +48,7 @@ if __name__ == '__main__':
     for example in examples:    
         if S.binary_search(example[0], example[1]):
             
-            print('Found at index: ', mid)
+            print('Found at index:', mid)
         else: print('Not found!')
     
                     
