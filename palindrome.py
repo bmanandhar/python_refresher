@@ -17,10 +17,10 @@ class Solution(object):
         return True
     
 if __name__ == '__main__':
-    string = ['rotator']#, 'repaper', 'kayak', 'sagas', 'malayalam']
+    string = ['rotator', 'repaper', 'kayak', 'sagas', 'malayalam']
     
     S = Solution()
-    
+
     for i in range(len(string)):
         
         print(S.palindrome(string[i])) # Prints 'True'
