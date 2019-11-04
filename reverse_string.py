@@ -23,5 +23,5 @@ class Solution(object):
     
 if __name__== '__main__':
     text = "1-AbCdEfGh-9"
-print(reverse_string(text))
+print(reverse_string(text) == "9-hGfEdCbA-1") #Should print True
 
