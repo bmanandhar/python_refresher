@@ -23,7 +23,7 @@ if __name__== '__main__':
     text = "1-AbCdEfGh-9"
     S = Solution()
     print(S.reverse_string(text) == "9-hGfEdCbA-1") #Should print True
-    print(S.reverse_string(".gnirts desrever a saw tI"))
+    print(S.reverse_string(".gnirts desrever a saw tI")) #Should print "It was a reversed string."
 
 
 
