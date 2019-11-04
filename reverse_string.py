@@ -7,7 +7,7 @@ Created on Sun Nov  3 16:02:18 2019
 """
 class Solution(object):
     
-    def reverse_string(text):
+    def reverse_string(self, text):
         result = ''
         
         array = [None] * len(text)
@@ -23,8 +23,9 @@ class Solution(object):
     
 if __name__== '__main__':
     text = "1-AbCdEfGh-9"
-print(reverse_string(text) == "9-hGfEdCbA-1") #Should print True
-print(reverse_string(".gnirts desrever a saw tI"))
+    S = Solution()
+print(S.reverse_string(text) == "9-hGfEdCbA-1") #Should print True
+print(S.reverse_string(".gnirts desrever a saw tI"))
 
 
 
