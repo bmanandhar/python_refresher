@@ -26,12 +26,11 @@ class Solution(object):
             if array[mid] == num:
                 return True
             
-            else:
-                if array[mid] < num:
+            elif array[mid] < num:
                     low = mid+1
                 
-                else:
-                    high = mid+1
+            else:
+                high = mid+1
         
         return False
 
