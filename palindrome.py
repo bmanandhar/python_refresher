@@ -17,13 +17,21 @@ class Solution(object):
         return True
     
 if __name__ == '__main__':
-    string = ['rotator', 'country', 'repaper', 'kayak', 'house', 'sagas', 'malayalam']
+    string = [
+            'rotator',
+            'country',
+            'repaper',
+            'kayak',
+            'house',
+            'sagas',
+            'malayalam'
+            ]
     
     S = Solution()
 
     for i in range(len(string)):
         
-        print(S.palindrome(string[i])) # Print 'True' and 'False'
+        print(S.palindrome(string[i])) # Prints 'True' or 'False'
     
     
     
