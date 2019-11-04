@@ -24,4 +24,7 @@ class Solution(object):
 if __name__== '__main__':
     text = "1-AbCdEfGh-9"
 print(reverse_string(text) == "9-hGfEdCbA-1") #Should print True
+print(reverse_string(".gnirts desrever a saw tI"))
+
+
 
