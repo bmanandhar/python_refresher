@@ -10,14 +10,14 @@ class Solution(object):
     def palindrome(self, string):
         
         i = 0
-        while i < len(string):
-            if string[i] != string[(len(string) - 1) - i]:
+        while i <= len(string)//2:
+            if string[i] != string[len(string) - 1 - i]:
                 return False
             i += 1
         return True
     
 if __name__ == '__main__':
-    string = ['rotator', 'repaper', 'kayak', 'sagas', 'malayalam']
+    string = ['rotator']#, 'repaper', 'kayak', 'sagas', 'malayalam']
     
     S = Solution()
     
@@ -26,4 +26,4 @@ if __name__ == '__main__':
         print(S.palindrome(string[i])) # Prints 'True'
         
     
-    
+
