@@ -33,3 +33,6 @@ if __name__ == '__main__':
     
     for i in range(len(arrays)):
         print(S.bubble_sort(arrays[i]))
+        
+        
+        
