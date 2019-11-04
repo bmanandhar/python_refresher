@@ -51,7 +51,7 @@ if __name__== "__main__":
     S = Solution()
     examples = [
             ['racer', ['crazer', 'racer']],
-            ['racer', ['crazer', 'carer', 'racar', 'caers', 'racer']],
+            ['dormitory', ['9xa5', 'dirtyroom', 'roomdirty', 'facebook']],
             ['abba', ['aabb', 'abcd', 'bbaa', 'dada']],
             ['laser', ['lazing', 'lazy',  'lacer']],
             ['funeral',['funreal', 'realfunny', 'realfun', 'funnyreal']]
