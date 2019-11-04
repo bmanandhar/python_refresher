@@ -26,8 +26,8 @@ class Solution(object):
             for j in range(len(word1)):
                 if word1[i] == word2[j]: 
                     
-                    if i == j: # matching chars and indices
-                        x += 1
+                    if i == j: 
+                        x += 1 # matching both chars and indices
                     else:
                         y += 1 # matching chars but not indices
                         
