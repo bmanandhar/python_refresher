@@ -5,11 +5,11 @@ Created on Sun Nov  3 20:05:16 2019
 
 @author: bijayamanandhar
 """
-
-# Write a function, `letter_count(str)` that takes a string and
-# returns a hash mapping each letter to its frequency. Do not include
-# spaces.
-#
+'''
+Write a function, `letter_count(str)` that takes a string 
+and returns a hash mapping each letter to its frequency. 
+Do not include spaces.
+'''
 
 class Solution(object):
     
@@ -28,8 +28,17 @@ class Solution(object):
     
 if __name__ == '__main__':
     
-    strings = ['word', 'sentence', 'america', 'currency', 'fantastic', 'stations']
+    strings = [
+            'word', 
+            'sentence', 
+            'america', 
+            'currency', 
+            'fantastic', 
+            'stations'
+            ]
+    
     S = Solution()
+    
     for i in range(len(strings)):
         print(S.letter_count(strings[i]))
     
