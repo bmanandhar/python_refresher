@@ -21,3 +21,8 @@ print('Start time: ', x)
 #end time = y
 y = datetime.datetime.now()
 print('End time: ', y)
+
+
+
+x = [1,2,3,6]
+print(x.index(2))

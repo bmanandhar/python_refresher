@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  4 15:01:48 2019
+
+@author: bijayamanandhar
+"""
+
+class Solution(object):
+    
+    
+    def binary_search(self, array, num):
+        
+        low = 0
+        high = len(array)-1
+        
+        while low <= high:
+            
+            global mid
+            mid = (low+high)//2
+            
+            if array[mid] == num:
+                return True
+            
+            else:
+                if array[mid] < num:
+                    low = mid+1
+                
+                else:
+                    high = mid+1
+        
+        return False
+
+if __name__ == '__main__':
+    
+    S = Solution()
+    
+    examples = [                   
+            [[4, 7, 8, 12, 34, 45, 99], 45],
+            [[1, 3, 5, 7, 11], 12],
+            [[2, 9, 10, 11, 15], 15],
+            [[4, 9, 23, 32, 56], 23]
+            ]
+    
+    for example in examples:    
+        if S.binary_search(example[0], example[1]):
+            
+            print('Found at index: ', mid)
+        else: print('Not found!')
+    
+                    
