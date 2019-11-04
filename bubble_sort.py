@@ -34,5 +34,52 @@ if __name__ == '__main__':
     for i in range(len(arrays)):
         print(S.bubble_sort(arrays[i]))
         
+print("Next...")
         
         
+
+class Solution1(object):
+    
+    def bubble_sort1(self, arr):
+        for i in range(len(arr)-1, 0, -1):
+            for j in range(i):
+                if arr[j] > arr[j+1]:
+                    temp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = temp
+        return arr
+                
+if __name__ == '__main__':
+    
+    S = Solution1()
+    
+    arrays = [
+            [-9, 9, 1, 8, 6],
+            [3, 11, -1, 8, 6],
+            [100, -11, 90, 34, 74, -11]
+            ]
+    
+    for i in range(len(arrays)):
+        print(S.bubble_sort1(arrays[i]))
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
