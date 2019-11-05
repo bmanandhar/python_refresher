@@ -40,7 +40,7 @@ if __name__ == "__main__":
             ("One must have a mind of winter"),        #must have
             ("Where there is a will there is a way"),  #Where there
             ("Sky is the limit"),                      #the limit
-            ("Make hay while the sun shines"),             #sun shines
+            ("Make hay while the sun shines"),         #sun shines
             ("A stitch in time saves nine")            #time saves
             )
     for example in examples:
