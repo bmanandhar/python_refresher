@@ -37,7 +37,8 @@ if __name__ == "__main__":
         
         if S.linear_search(example[0], example[1]):
             print("Found at index:", i)
-        print("Not found")
+        else:
+            print("Not found")
         
         
     
