@@ -87,10 +87,7 @@ if __name__ == '__main__':
     
     S = Solution()
     
-    
-    
     print(S.pageCount(6, 5) == 1)#Prints 'True'
-    
     
     
     
