@@ -25,6 +25,7 @@ class Solution:
         for i in range(1, n+1):
     
             #forms a dictionary with key-value pairs for types of birds and occurences
+            #keys are in ascending order because of iteration in order
             bird_dic[i] = arr.count(i)
         #checking occurences with respect to types of birds
         for key in bird_dic:
@@ -34,7 +35,7 @@ class Solution:
                 
                 result, freq = key, bird_dic[key] 
         
-        return result 
+        return result
 
 if __name__ == '__main__':
     
