@@ -17,10 +17,18 @@ class Solution(object):
         
         low = 0
         high = len(array)-1
+        global mid
         
-        while low <= high:
+        if num == array[0]: 
+            mid = 0
+            return True
+        if num == array[len(array) - 1]:
+            mid = len(array) - 1
+            return True
+        
+        while low < high:
             
-            global mid
+            
             mid = (low+high)//2
             
             if array[mid] == num:
@@ -38,11 +46,13 @@ if __name__ == '__main__':
     
     S = Solution()
     
-    examples = (                   
+    examples = (  
+            ([7, 8, 12, 34, 45, 99], 7),
             ([4, 7, 8, 12, 34, 45, 99], 45),
             ([1, 3, 5, 7, 11], 12),
             ([2, 9, 10, 11, 15], 15),
-            ([4, 9, 23, 32, 56], 23)
+            ([4, 9, 23, 32, 56], 23),
+            ([-8, -6, -5, -3, -1], -1)
             )
     
     for example in examples:    
