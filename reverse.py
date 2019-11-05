@@ -42,6 +42,7 @@ if __name__ == '__main__':
     print(S.reverse(-1234))
     print(S.reverse(82309))
     print(S.reverse(9**9))
-
+    print(S.reverse(-2**32))    #Extreme case, retuens 0
+    print(S.reverse(2**32))     #Extreme case, returns 0
 
     
