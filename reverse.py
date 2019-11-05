@@ -15,6 +15,7 @@ assume that your function returns 0 when the reversed integer
 overflows.
 '''
 class Solution:
+    
     def reverse(self, x: int) -> int:
                 
         x_str = str(abs(x))
