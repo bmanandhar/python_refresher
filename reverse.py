@@ -21,8 +21,8 @@ class Solution:
         
         list = [None] * len(x_str)
         
-        for i in range(len(x_str)-1, -1, -1):
-            list[i] = x_str[i]
+        for i in range(len(x_str)):
+            list[i] = x_str[len(x_str) - 1 - i]
             
         num_reversed = ''.join(list)
             
