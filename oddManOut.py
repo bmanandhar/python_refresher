@@ -12,6 +12,7 @@ You are given an array of integers where every elemen appears exactly twice,
 except for one integer that which appears only once. 
 Write an algorithm that finds the element which appears only once. 
 '''
+
 class Solution:
     
     def oddManOut(self, array):
@@ -24,15 +25,12 @@ class Solution:
                 dict[i] = 1
             else:
                 dict[i] += 1
-                
         for key in dict:
             
             if dict[key] == 1:
             
                 return key
-                
-#print(oddManOut([3,1,6,1,3]))
-              
+                              
 if __name__ == '__main__':
     
     S = Solution()
