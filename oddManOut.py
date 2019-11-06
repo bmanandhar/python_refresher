@@ -30,13 +30,14 @@ class Solution:
             if dict[key] == 1:
             
                 return key
+        return False
                               
 if __name__ == '__main__':
     
     S = Solution()
     
     examples = [
-            [3, 1, 6, 1, 3],
+            [3, 1, 1, 3],
             [9, -8, 9, 10, -8, 1, 1],
             [13, 71, 68, 68, 13],
             [30, 60, 60, -19, 30]
