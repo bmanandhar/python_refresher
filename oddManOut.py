@@ -8,8 +8,8 @@ Created on Wed Nov  6 12:36:23 2019
 
 '''
 Odd-man Out...
-You are given an array of integers where every elemen appears exactly twice,
-except for one integer that which appears only once. 
+You are given an array of integers where every element appears twice,
+except for one integer which appears only once. 
 Write an algorithm that finds the element which appears only once. 
 '''
 
