@@ -26,20 +26,17 @@ print(x.index(2))
 x = { 'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000 }
 print(x['M'])
 
-array = ['a','b','c']
-print(array.buffer_info())
+    
+x = [1, 'a', 4, 'b', 9, 'g']
+    
+print(x)
+    
+x = list(reversed(x))  
+    
+print(x, 'reversed')   
+print(x.index(4))
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+x
+
+
