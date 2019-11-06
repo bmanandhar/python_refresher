@@ -18,13 +18,13 @@ class Solution:
 
     def string_reverse(self, sentence):
         
-        words = sentence.split(' ')
+        words = sentence.split(' ')   #words are split and placed in a list
         string = []
         
         for word in words:
-            string.insert(0, word)
+            string.insert(0, word)    #words in the list are reversed
         
-        return ' '.join(string)
+        return ' '.join(string)       #returns the string that is reversed
 
 
 if __name__ == "__main__":
