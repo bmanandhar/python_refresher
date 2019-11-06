@@ -44,6 +44,9 @@ if __name__ == '__main__':
     
     for example in examples:
         print(S.oddManOut(example))
+        
+        
+        #End
        
        
         
