@@ -36,9 +36,10 @@ if __name__ == "__main__":
             "my father is working",
             "wife is in the city"
             )
-    for example in examples:
+    i = 0
+    while i < len(examples):
 
-        print(S.string_reverse(example))
-        
+        print(S.string_reverse(examples[i]))
+        i += 1
         
         
