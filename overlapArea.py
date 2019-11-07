@@ -11,17 +11,17 @@ Given two overlapping rectangles on a plane.
 We are given bottom left and top right points of the two rectangles. 
 We need to find the total area overlapped by the rectangles.
 
-                   |-----------|
+                   .-----------.
                    |           |
                    |           |
-            |------|-----------| 
+            .------|-----------| 
             |      |...........|
             |      |...........|
             |      |...........|
-            |      |-----------|            
+            |      .-----------|            
             |                  |
             |                  |
-            |------------------|
+            .------------------.
 
 """
 class Solution:
