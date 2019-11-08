@@ -31,10 +31,10 @@ if __name__ == "__main__":
     
     S = Solution()
     examples = (
-            "teacher loves coffe",
-            "she will go to school",
-            "my father is working",
-            "wife is in the city"
+            "teacher loves coffe",     #"coffe loves teacher"
+            "she will go to school",   #"school to go will she"
+            "my father is working",    #"working is father my"
+            "wife is in the city"      #"city the in is wife"
             )
     i = 0
     while i < len(examples):

@@ -36,7 +36,40 @@ x = list(reversed(x))
 print(x, 'reversed')   
 print(x.index(4))
 
+print(" ")
+class Person():
+    
+    def __init__(self, name, age, city, job):
+        self.name = name
+        self.age = age
+        self.city = city
+        self.job = job
+        
+    def show(self):
+        print("Name: ", self.name)
+        print("Age: ", self.age)
+        print("City: ", self.city)
+        print("Job: ", self.job)
+        
+peter = Person("Peter", 21, "Denver", "Web developer")
+michelle = Person("Michelle", 20, "Oakland", "Photographer")
 
-x
+peter.show()
+print(" ")
+michelle.show()
+       
+class this_is_class:
+    
+    def show(self):
+        print("Example of class!")
 
+this = this_is_class()
+print(" ")
+this.show()
+
+
+      
+
+      
+      
 
