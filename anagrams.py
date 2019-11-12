@@ -14,7 +14,7 @@ anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', '
 anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 """
 
-class Solution(object):
+class Solution:
 
     def anagrams(self, check_word, array):
         

@@ -9,17 +9,15 @@ Created on Tue Nov  5 10:36:13 2019
 #Vanity Phone Numbers
 """
 Given:
-A list(array) of vanity code in alpha characters.
-A list of telephone numbers.
+    A list(array) of vanity code in alpha characters.
+    A list of telephone numbers.
 Form a list(array) of phone numbers selected to match vanity codes.
+
 Key-pad has alpha characters as:
     2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ.
 
 """
-
-# =============================================================================
-class Solution:
-    
+class Solution:    
     
     def match_vanity_phone(self, codes, numbers):
         
@@ -73,7 +71,6 @@ class Solution:
     
         return selected_phones
 
-
 #Test case:
 if __name__ == '__main__':
     
@@ -101,7 +98,8 @@ if __name__ == '__main__':
             '+38461324372623'
             ]
     
-    print(S.match_vanity_phone(alpha_codes, telephone_numbers) == expected) #True
+    print(S.match_vanity_phone(alpha_codes, telephone_numbers) == expected) 
+    #True
 
 
 

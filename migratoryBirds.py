@@ -6,7 +6,7 @@ Created on Tue Nov  5 09:10:01 2019
 @author: bijayamanandhar
 """
 '''
-array is the record of bird sighting in frequesncy, elements being bird-id
+array is the record of bird sightings in frequency, elements being bird-id
 n is the total number of bird types (id) ranging from 1 thru n
 '''
 
@@ -19,21 +19,21 @@ class Solution:
         #creates a vriable for number of occurences
         
         #different variables
-        bird_dic, result, freq = {}, '', 0
+        bird_dict, result, freq = {}, '', 0
     
         #types of birds, id-1 thru id-n
         for i in range(1, n+1):
     
             #forms a dictionary with key-value pairs for types of birds and occurences
             #keys are in ascending order because of iteration in order
-            bird_dic[i] = arr.count(i)
+            bird_dict[i] = arr.count(i)
         #checking occurences with respect to types of birds
-        for key in bird_dic:
+        for key in bird_dict:
             
             #sets condition for updating result
-            if bird_dic[key] > freq: 
+            if bird_dict[key] > freq: 
                 
-                result, freq = key, bird_dic[key] 
+                result, freq = key, bird_dict[key] 
         
         return result
 
@@ -41,6 +41,7 @@ if __name__ == '__main__':
     
     S = Solution()
 
-    print(S.migratoryBirds([1,3,5,3,4,1,4,4,5,5,3,3], 5) == 3) #should print 'True'
+    print(S.migratoryBirds([1,3,5,3,4,1,4,4,5,5,3,3], 5) == 3) 
+    #should print 'True'
 
 

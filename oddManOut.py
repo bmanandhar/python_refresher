@@ -18,19 +18,20 @@ class Solution:
     def oddManOut(self, array):
 
         dict = {}
+        
         for i in array:
             
-            if i not in dict:
-                
+            if i not in dict:   #adds key-value
                 dict[i] = 1
+            
             else:
-                dict[i] += 1
+                dict[i] += 1    #value increment if key repeats
+                
         for key in dict:
-            
-            if dict[key] == 1:
-            
+            if dict[key] == 1:  #checks for key with single occurence
                 return key
-        return False
+        
+        return False            #single occurence not found
                               
 if __name__ == '__main__':
     

@@ -6,11 +6,6 @@ Created on Sun Nov  3 19:39:33 2019
 @author: bijayamanandhar
 """
 class Solution(object):
-    #start time = x
-    import time
-    print(time.localtime())
-    x = datetime.datetime.now()
-    print('Start time: ', x)
     #code starts below
     
     def palindrome(self, string):
@@ -39,6 +34,5 @@ if __name__ == '__main__':
         
         print(S.palindrome(string[i])) # Prints 'True' or 'False'
 #code ends here     
-#end time = y
-y = datetime.datetime.now()
-print('End time: ', y)
+
+

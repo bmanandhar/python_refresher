@@ -19,6 +19,9 @@ class Solution(object):
     
     def isogram_matcher(self, word1, word2):
         
+        # x: number of matching chars and indices
+        # y: number of matching chars but unmatched indices
+        
         x, y = 0, 0
     
         for i in range(len(word1)):
@@ -27,9 +30,9 @@ class Solution(object):
                 if word1[i] == word2[j]: 
                     
                     if i == j: 
-                        x += 1 # matching both chars and indices
+                        x += 1 
                     else:
-                        y += 1 # matching chars but not indices
+                        y += 1 
                         
         return [x, y]
     

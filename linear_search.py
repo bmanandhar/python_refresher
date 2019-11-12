@@ -6,7 +6,7 @@ Created on Mon Nov  4 17:10:41 2019
 @author: bijayamanandhar
 """
 
-class Solution(object):
+class Solution:
     
     def linear_search(self, list, n):
         
@@ -37,8 +37,7 @@ if __name__ == "__main__":
         
         if S.linear_search(example[0], example[1]):
             print("Found at index:", i)
-        else:
-            print("Not found")
+        print("Not found")
         
         
     

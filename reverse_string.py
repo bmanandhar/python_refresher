@@ -5,9 +5,10 @@ Created on Sun Nov  3 16:02:18 2019
 
 @author: bijayamanandhar
 """
-class Solution(object):
+class Solution:
     
     def reverse_string(self, text):
+        
         result = ''
         
         array = [None] * len(text)

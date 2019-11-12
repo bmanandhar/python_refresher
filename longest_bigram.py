@@ -9,7 +9,7 @@ Created on Mon Nov  4 20:32:49 2019
 """ 
 A bigram of a sentence is defined as the sum of two adjacent words.
 For example, for the sentence "One must have a mind of winter", 
-possible bigrams are
+possible bigrams are:
 'One must', 'must have', 'have a', 'a mind', 'mind of', and 'of winter'.
 
 Write a function that returns the longest bigram.
@@ -22,13 +22,14 @@ class Solution(object):
         split_sentence = sentence.split()  
         
         longest_bigram = ""
+        
         for i in range(len(split_sentence) - 1):
             
-            x = split_sentence[i] + " " + split_sentence[i+1]
+            bigram = split_sentence[i] + " " + split_sentence[i+1]
             
-            if len(x) > len(longest_bigram):
+            if len(bigram) > len(longest_bigram):
                 
-                longest_bigram = x
+                longest_bigram = bigram
                 
         return longest_bigram
         

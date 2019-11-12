@@ -5,22 +5,22 @@ Created on Sun Nov  3 14:40:26 2019
 
 @author: bijayamanandhar
 """
-def to_camel_case(text):
-    #your code here
-    x = ""
+def missing(arr):
     
-    for char in text:
-        if char in "_-":
-            x = char
-    text = text.split(x)
-    new = [text[0]]
-    
-    for i in range(1, len(text)):
-        word = text[i].capitalize()
-        new.append(word)
+    for i in range(len(arr) -1):
         
-    return ''.join(new)
+        if i > 0:
+            left = arr[i] - arr[i -1]
+            right = arr[i +1] - arr[i]
+            
+            if left != right:
+                return (arr[i] + arr[i + 1])/2
+                
+print(missing([1, 2, 3, 4, 6, 7, 8, 9]) == 5)
+print(missing([9, 7, 5, 3, -1, -3]) == 1)
+print(missing([10, 15, 25, 50, 35]) == 20)
+print(missing([0, -3, -6, -12, -15, -18]) == -9)
 
-print(to_camel_case("the_stealth_warrior"))
-print(to_camel_case("The-Stealth-Warrior"))
 
+
+ 
