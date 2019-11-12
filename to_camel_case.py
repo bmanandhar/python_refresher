@@ -24,3 +24,7 @@ def to_camel_case(text):
 
 print(to_camel_case("the_stealth_warrior"))
 print(to_camel_case("The-Stealth-Warrior"))
+
+
+
+

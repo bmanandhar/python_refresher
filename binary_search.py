@@ -27,17 +27,16 @@ class Solution(object):
             return True
         
         while low < high:
-            
-            
-            mid = (low+high)//2
+                     
+            mid = (low + high)//2
             
             if array[mid] == num:
                 return True
             
             elif array[mid] < num:
-                    low = mid+1
+                    low = mid +
                 
-            else:
+            else: 
                 high = mid+1
         
         return False

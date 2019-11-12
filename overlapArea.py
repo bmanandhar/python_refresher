@@ -16,7 +16,7 @@ We need to find the total area overlapped by the rectangles.
                    |           |
             .------|-----------| 
             |      |...........|
-            |      |...........|
+            |      |...Area....|
             |      |...........|
             |      .-----------|            
             |                  |
@@ -25,8 +25,7 @@ We need to find the total area overlapped by the rectangles.
 
 """
 class Solution:
-    
-    
+     
     def overlapArea(self, rect1, rect2):
     
         x_min = max(rect1[0][0], rect2[0][0])
@@ -35,10 +34,11 @@ class Solution:
         y_min = max(rect1[0][1], rect2[0][1]) 
         y_max = min(rect1[1][1], rect2[1][1])
         
-        if x_min > x_max:
-            return False
+        area = (x_max - x_min) * (y_max - y_min)
         
-        return (x_max - x_min) * (y_max - y_min)
+        if area <= 0:
+            return "Rectabgles do not overlap"
+        return area
     
 if __name__ == '__main__':
     
@@ -49,8 +49,7 @@ if __name__ == '__main__':
     print(S.overlapArea([[0, 0], [2, 1]], [[1, 0], [3, 1]]))
     print(S.overlapArea([[1, 1], [2, 2]], [[0, 0], [5, 5]]))
     print(S.overlapArea([[1, 1], [2, 2]], [[4, 4], [5, 5]]))
-    print(S.overlapArea([[1, 1], [5, 4]], [[2, 2], [3, 5]]))
-
-
+    print(S.overlapArea([[1, 1], [5, 4]], [[2, 2], [3, 5]])) #2
+    print(S.overlapArea([[0, 0], [5, 4]], [[5, 4], [7, 8]])) #0
 
     
